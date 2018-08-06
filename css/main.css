@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Orienta', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: #fafafa;
+} */
+
+.brand-logo{
+    left: 15px;
+    position: relative;
+}
+
+h2{
+    font-family: 'Englebert', sans-serif;
+}
+hr{
+    border: 1.5px solid black;
+}
+/* #aside{
+    background-color: #e8eaf6;
+    border-right: 2px solid black; 
+} */
+
+#search-form{
+    margin-top: 20px;
+    padding: 20px;
+}
