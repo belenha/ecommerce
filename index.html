@@ -7,47 +7,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Englebert|Orienta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand|Orienta" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper black">
-            <div class="row">
-                <div class="col s12">
-                    <a href="#" class="brand-logo">E-commerce</a>
-                </div>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="#" class="brand-logo"><img class="responsive-img" src="assets/images/arrow.png" alt=""></a>
+                <ul id="nav-mobile" class="right hide-on-down">
+                    <li>
+                        <a href="#" id="home" class="black-text">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="black-text">Inicia sesión</a>
+                    </li>
+                    <li>
+                        <a href="#" class="black-text">Pagar</a>
+                    </li>
+                </ul>
             </div>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="sass.html">Sass</a>
-                </li>
-                <li>
-                    <a href="badges.html">Components</a>
-                </li>
-                <li>
-                    <a href="collapsible.html">JavaScript</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <header>
         <section>
             <div class="center-align">
                 <h2>¡Encuentra todo lo que necesitas!</h2>
-                <h5>¿Qué quieres buscar hoy?</h5>
+                <!-- <h5>¿Qué quieres buscar hoy?</h5> -->
                 <hr>
+            </div>
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="carousel col l6 m3 s12">
+                        <a class="carousel-item" href="#one!"><img src="https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="http://www.thinkgeek.com/images/products/zoom/jtrm_unicorn_mug.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="http://www.thinkgeek.com/images/products/zoom/jqvh_pop_nickelodeon_90s_vinyl_figs.jpg"></a>
+                        <a class="carousel-item" href="#four!"><img src="http://www.gbeye.com/thumbnails/lightbox_203403_1499158885.jpg"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://images-na.ssl-images-amazon.com/images/I/41aUPrXLXhL._US500_.jpg"></a>
+                    </div>
+                    <div class="col l6 m6 s12">
+                        <img class="responsive-img shopping" src="https://cdn.dribbble.com/users/107759/screenshots/4514540/isometric6_loop_1200x12002.gif" alt="">
+                    </div>
+                </div>
             </div>
         </section>
     </header>
     <main class="row">
-        <div class="col s12 m4 l3" id="aside">
+        <div class="col s12 m4 l4" id="aside">
             <form action="" class="col s12" id="searchForm">
                 <input class="col s12" type="text" id="searchProducts" placeholder="Buscar">
-                <button type="submit" class="btn col s12 black">Buscar</button>
+                <button type="submit" class="btn col s12" style="background:#D90E5D">Buscar</button>
             </form>
+            <div id="categories"></div>
+            <div id="title"></div>
         </div>
-        <div class="col s12 m8 l9" id="info"></div>
+        <div class="col s12 m8 l8" id="info"></div>
     </main>
     <!-- <main class="container">
         <section class="row" id="info"></section>

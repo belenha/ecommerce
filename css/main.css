@@ -6,26 +6,54 @@
 }
 
 /* body{
-    background-color: #fafafa;
+    background-color: #eeeeee;
 } */
 
 .brand-logo{
-    left: 15px;
+    height: auto;
     position: relative;
+    width: 100px;
 }
 
 h2{
-    font-family: 'Englebert', sans-serif;
+    color: #B11A5D;
+    font-family: 'Shrikhand', cursive;
 }
 hr{
-    border: 1.5px solid black;
+    border: 1.5px solid #FFBE00;
 }
-/* #aside{
-    background-color: #e8eaf6;
-    border-right: 2px solid black; 
-} */
+
+.line{
+    border: 1.5px solid#F35047 ;
+}
+algo{
+    color: #B11A5D
+    #FF7B31
+    #FFBE00
+    #F35047
+    #FF005E
+    #D90E5D
+}
+
+.searchedProducts{
+    padding: 8px;
+}
 
 #search-form{
     margin-top: 20px;
     padding: 20px;
+}
+
+#categories{
+    left: 15px;
+    position: relative;
+    top: 100px;
+}
+
+.categorieCard{
+    padding: 8px;
+}
+
+.waves-effect{
+    margin: 5px 0px;
 }
