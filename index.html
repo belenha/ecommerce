@@ -14,16 +14,16 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white">
-                <a href="#" class="brand-logo"><img class="responsive-img" src="assets/images/arrow.png" alt=""></a>
-                <ul id="nav-mobile" class="right hide-on-down">
+                <a href="#" class="brand-logo left"><img class="responsive-img" src="assets/images/arrow.png" alt=""></a>
+                <ul id="nav-mobile" class="right">
                     <li>
                         <a href="#" id="home" class="black-text">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="black-text">Inicia sesión</a>
+                        <a href="#" data-target="modal1" class="black-text modal-trigger"><i class="material-icons">shopping_cart</i></a>
                     </li>
                     <li>
-                        <a href="#" class="black-text">Pagar</a>
+                        <span class="black-text" id="count"></span>
                     </li>
                 </ul>
             </div>
@@ -33,19 +33,11 @@
         <section>
             <div class="center-align">
                 <h2>¡Encuentra todo lo que necesitas!</h2>
-                <!-- <h5>¿Qué quieres buscar hoy?</h5> -->
-                <hr>
+                <hr class="z-depth-1">
             </div>
             <div class="container">
-                <div class="row valign-wrapper">
-                    <div class="carousel col l6 m3 s12">
-                        <a class="carousel-item" href="#one!"><img src="https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg"></a>
-                        <a class="carousel-item" href="#two!"><img src="http://www.thinkgeek.com/images/products/zoom/jtrm_unicorn_mug.jpg"></a>
-                        <a class="carousel-item" href="#three!"><img src="http://www.thinkgeek.com/images/products/zoom/jqvh_pop_nickelodeon_90s_vinyl_figs.jpg"></a>
-                        <a class="carousel-item" href="#four!"><img src="http://www.gbeye.com/thumbnails/lightbox_203403_1499158885.jpg"></a>
-                        <a class="carousel-item" href="#five!"><img src="https://images-na.ssl-images-amazon.com/images/I/41aUPrXLXhL._US500_.jpg"></a>
-                    </div>
-                    <div class="col l6 m6 s12">
+                <div class="row">
+                    <div class="col offset-l3 offset-m3 l6 m6 s12">
                         <img class="responsive-img shopping" src="https://cdn.dribbble.com/users/107759/screenshots/4514540/isometric6_loop_1200x12002.gif" alt="">
                     </div>
                 </div>
@@ -53,34 +45,57 @@
         </section>
     </header>
     <main class="row">
+        <div class="col s12 m8 l8" id="info"></div>
         <div class="col s12 m4 l4" id="aside">
             <form action="" class="col s12" id="searchForm">
                 <input class="col s12" type="text" id="searchProducts" placeholder="Buscar">
                 <button type="submit" class="btn col s12" style="background:#D90E5D">Buscar</button>
             </form>
             <div id="categories"></div>
-            <div id="title"></div>
+            <!-- <div id="title"></div> -->
         </div>
-        <div class="col s12 m8 l8" id="info"></div>
     </main>
-    <!-- <main class="container">
-        <section class="row" id="info"></section>
-    </main> -->
-
+      <!-- Modal Structure for pay-->
+    <div id="modal1" class="modal">
+        <div class="modal-content" id="modal-info">
+            <h4>Carrito</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Producto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <p id="total"></p>
+            <div class="row">
+                <p id="msg" class="col s12 hidden error">Click en la casilla para continuar</p>
+                <form class="col s12" action="check">
+                    <p>
+                        <label>
+                            <input id="check" type="checkbox" />
+                            <span>Check here to continue</span>
+                        </label>
+                    </p>
+                </form>
+            </div>
+            <div>
+                <div id="paypal-button"></div>
+            </div>
+            <a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
+        </div>
+    </div>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/paypal.js"></script>
 </body>
 </html>
-
-
-
-<!-- <header class="container">
-        <div class="row center-align">
-            <form action="" class="col l12 s12" id="search-form">
-                <input class="offset-l2 col l6 s12" type="text" id="searchProducts" placeholder="Buscar">
-                <button type="submit" class="btn col l2 s12">Buscar</button>
-            </form>
-        </div>
-    </header> -->

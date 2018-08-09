@@ -1,3 +1,12 @@
+/* paletacolores{
+    color: #B11A5D
+    #FF7B31
+    #FFBE00
+    #F35047
+    #FF005E
+    #D90E5D
+} */
+
 *{
     box-sizing: border-box;
     font-family: 'Orienta', sans-serif;
@@ -5,14 +14,14 @@
     padding: 0;
 }
 
-/* body{
-    background-color: #eeeeee;
-} */
-
-.brand-logo{
-    height: auto;
+#nav-mobile{
+    right: 10px;
     position: relative;
-    width: 100px;
+}
+
+#count{
+    margin: 0;
+    padding: 0;
 }
 
 h2{
@@ -26,13 +35,10 @@ hr{
 .line{
     border: 1.5px solid#F35047 ;
 }
-algo{
-    color: #B11A5D
-    #FF7B31
-    #FFBE00
-    #F35047
-    #FF005E
-    #D90E5D
+
+.shopping{
+    position: relative;
+    top: 30px;
 }
 
 .searchedProducts{
@@ -45,7 +51,6 @@ algo{
 }
 
 #categories{
-    left: 15px;
     position: relative;
     top: 100px;
 }
