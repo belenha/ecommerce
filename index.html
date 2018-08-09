@@ -57,26 +57,15 @@
     </main>
       <!-- Modal Structure for pay-->
     <div id="modal1" class="modal">
-        <div class="modal-content" id="modal-info">
+        <div class="modal-content">
             <h4>Carrito</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Producto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="modal-footer">
+            <div id="modal-info"></div>
             <p id="total"></p>
-            <div class="row">
-                <p id="msg" class="col s12 hidden error">Click en la casilla para continuar</p>
-                <form class="col s12" action="check">
+            <div>
+                <p id="msg" class="col s12 hidden error">Please check the checkbox</p>
+            </div>
+            <div>
+                <form action="check">
                     <p>
                         <label>
                             <input id="check" type="checkbox" />
@@ -88,6 +77,8 @@
             <div>
                 <div id="paypal-button"></div>
             </div>
+        </div>
+        <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
         </div>
     </div>

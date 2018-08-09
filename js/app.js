@@ -31,7 +31,7 @@ function getData() {
             for(var i = 0; i < 20; i++) {
                 var productImg = data.results[i].thumbnail;
                 var productName = data.results[i].title;
-                var price = '$ ' + data.results[i].price;
+                var price = data.results[i].price;
                 var productState = data.results[i].address["state_name"];
                 var productCity = data.results[i].address["city_name"];
                 var template = `<div class="card searchedProducts">
@@ -113,7 +113,7 @@ function productCategories(dataCategories) {
         for (var i = 0; i <= 20; i++) {
             var photoProduct = data.results[i].thumbnail;
             var nameProduct = data.results[i].title;
-            var costProduct = '$' + '' + data.results[i].price;
+            var costProduct = data.results[i].price;
             var shipping = data.results[i].address.state_name + ',' + data.results[i].address.city_name;
             var template = `<div class="card">
                                     <div class="card categorieCard center-align">
@@ -144,8 +144,7 @@ function getElementsCart(e, nameProductCar, priceProductCar){
     var templateModal =
                             `<table class="table">
                                  <thead>
-                                        <tr>
-                                        </tr>
+                                        <tr></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -162,7 +161,7 @@ function getElementsCart(e, nameProductCar, priceProductCar){
         total += array[i];
     };
     
-    $('#total').html("Total: $ " + total);
+    $('#total').text("Total:$ "+total);
 };
 
 $(document).ready(function() {
